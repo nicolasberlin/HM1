@@ -61,7 +61,7 @@ def svm(train, theta, lam):
     s = X.T @ theta
 
     delta = np.minimum(np.abs(s + 1.0), np.abs(s - 0.0))
-    print("min distance to {−1,0} =", float(delta.min()))
+    #print("min distance to {−1,0} =", float(delta.min()))
 
     loss_terms = y * phi(-s)[0] + (1 - y) * phi(s)[0]
 
